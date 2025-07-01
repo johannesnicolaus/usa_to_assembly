@@ -38,6 +38,7 @@ done
 cat *.temp.fasta > "$cwd/$output_fasta"
 
 # Remove the temporary directory and its contents
+cd -
 rm -rf "$temp_dir"
 
 echo "Multi-fasta file created at $output_fasta"
